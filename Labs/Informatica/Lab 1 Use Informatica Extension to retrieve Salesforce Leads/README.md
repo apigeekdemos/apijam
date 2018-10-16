@@ -32,7 +32,7 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 1. Go to [https://dm-us.informaticacloud.com/identity-service/home](https://dm-us.informaticacloud.com/identity-service/home) and log in to the IIC UI using your IIC credentials.
 
-![image alt text](./media/image_iic_login.jpeg)
+![image alt text](./media/image_iic_login.png)
 
 2. Select **Application Integration** from the main page menu
 
@@ -120,19 +120,19 @@ Enter the Flow name, description, select *Path and Verb* option, enter values fo
 
 19. Add the Extension Callout policy to the GET leads condition flow. In the policy popup, select the *sfLeadsExtension* instance previously created, then select the *FetchLeads* Action from the drop-down list. Apigee Edge automatically discovers all available workflows for this extension instance.
 
-[image alt text](./media/image_apigee_proxy_develop_ecpolicy.png)
+![image alt text](./media/image_apigee_proxy_develop_ecpolicy.png)
 
 20. Edit the policy to change the name of the output variable. This variable will contain the output of the extension that will return a list of Salesforce leads in JSON format. Click Save to save and deploy the proxy.
 
-[image alt text](./media/image_apigee_proxy_develop_ecpolicy_edit.png)
+![image alt text](./media/image_apigee_proxy_develop_ecpolicy_edit.png)
 
 21. Set the contents of the output variable as the response of the API proxy. To do this, add an *AssignMessage* policy to the response of the GET leads conditional flow. Click on +Step button in the response flow, then select *AssignMessage* policy type in the popup dialog.
 
-[image alt text](./media/image_apigee_proxy_develop_ampolicy.png)
+![image alt text](./media/image_apigee_proxy_develop_ampolicy.png)
 
 22. Edit the *AssignMessage* policy to remove the unused elements, set the payload content type, and content to come from the *sfleads* variable, and set the *AssignTo* elements' type attribute to be *response*, as shown in the image below. Then, click Save to save and deploy the proxy changes.
 
-[image alt text](./media/image_apigee_proxy_develop_ampolicy_edit.png)
+![image alt text](./media/image_apigee_proxy_develop_ampolicy_edit.png)
 
 *Congratulations!* ...You have now built a reverse proxy for an existing backend service running on Informatica Integration Cloud.
 
@@ -159,6 +159,7 @@ That completes this hands-on lesson. In this simple lab you learned how to creat
 
 # References
 
-* Useful Apigee documentation links on API Proxies - 
+* Informatica Integration Cloud Extension (https://docs.apigee.com/api-platform/reference/extensions/informatica-integration-extension)
+
 
 
