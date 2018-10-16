@@ -32,8 +32,6 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 1. Go to [https://dm-us.informaticacloud.com/identity-service/home](https://dm-us.informaticacloud.com/identity-service/home) and log in to the IIC UI using your IIC credentials.
 
-![image alt text](./media/image_iic_login.png)
-
 2. Select **Application Integration** from the main page menu
 
 ![image alt text](./media/image_iic_ai.jpeg)
