@@ -65,27 +65,27 @@ In the next set of steps below you go through a wizard in the IIC UI to create a
 
 ![image alt text](./media/image_iic_ai_new_service_apigee_initiate_order.png)
 
-6. Provide information about the proxy on this page. Enter a unique proxy name eg.{your_initials}_Orders, and provide a unique proxy basepath. eg. /v1/{your_initials}_orders. Optionally, update the description field, then click *Next*.
+7. Provide information about the proxy on this page. Enter a unique proxy name eg.{your_initials}_Orders, and provide a unique proxy basepath. eg. /v1/{your_initials}_orders. Optionally, update the description field, then click *Next*.
 
-![image alt text](./media/image_iic_new_service_apigee_proxy.png)
+![image alt text](./media/image_iic_ai_new_service_apigee_proxy.png)
 
-7. The *Initiate_Order* service only supports a single *Initiate_OrderOperation*, so check the box to include a conditional flow for this operation in the generated API proxy. Click *Next*.
+8. The *Initiate_Order* service only supports a single *Initiate_OrderOperation*, so check the box to include a conditional flow for this operation in the generated API proxy. Click *Next*.
 
-8. On the next page use *Authorization* passthru, leave checkboxes unchecked, and click *Next*.
+9. On the next page use *Authorization* passthru, leave checkboxes unchecked, and click *Next*.
 
-9. On the *Virtual Hosts* page, select both the *default*, *secure* virtual hosts. This indicates which virtual host the API proxy is deployed to, and receive traffic at at the appropriate endpoint (based on the environment). Click Next.
+10. On the *Virtual Hosts* page, select both the *default*, *secure* virtual hosts. This indicates which virtual host the API proxy is deployed to, and receive traffic at at the appropriate endpoint (based on the environment). Click Next.
 
-10. On the final *Build* page, review the proxy settings. Select only the *test* environment from the list. This wil build and deploy the API proxy to Apigee Edge *test* environment within the Apigee Organization you provided. Click Next. 
+11. On the final *Build* page, review the proxy settings. Select only the *test* environment from the list. This wil build and deploy the API proxy to Apigee Edge *test* environment within the Apigee Organization you provided. Click Next. 
 *NOTE*: Clicking Next here will deploy the API proxy to Apigee Edge. If you need to change any of the settings, click the *Go Back One Step* button to go to the previous page in the wizard.
 
-![image alt text](./media/image_iic_new_service_apigee_proxy_review.png)
+![image alt text](./media/image_iic_ai_new_service_apigee_proxy_review.png)
 
-11. Once the proxy is deployed successfully, you should see a *Summary* page, saying that the API proxy has been built and deployed to Apigee Edge. 
+12. Once the proxy is deployed successfully, you should see a *Summary* page, saying that the API proxy has been built and deployed to Apigee Edge. 
 Click on the link to view the proxy in Apigee Edge. You will be taken to the Apigee Edge UI where you will have to login using your Apigee Edge credentials, select the Org and view the deployed proxy.
 
 ![image alt text](./media/image_apigee_proxy_overview.png)
 
-12. Click the *Develop* tab in the top right. A *Conditional Flow* has been added to the generated proxy for the POST orders operation.
+13. Click the *Develop* tab in the top right. A *Conditional Flow* has been added to the generated proxy for the POST orders operation.
 
 *Congratulations!* ...You have now built a reverse proxy for an existing backend service running on Informatica Integration Cloud.
 
