@@ -1,4 +1,4 @@
-# API Design : Create a Reverse Proxy to an Informatica Intelligent Cloud Workflow
+# API Design : Lab 1 - Create a Reverse Proxy to an Informatica Intelligent Cloud Workflow using Apigee Extensions
 
 *Duration : 20 mins*
 
@@ -6,7 +6,7 @@
 
 # Use case
 
-You have a requirement to create a reverse proxy for taking requests from the Internet to retrieve lead information from a Salesforce CRM account and return the leads either as-is, or further process them to mask all sensitive data before returning a response to the calling application.
+You have a requirement to create a reverse proxy for taking requests from the Internet to retrieve lead information from a Salesforce CRM account and return the leads either as-is, or optionally further process them if required.
 
 # How can Apigee Edge help?
 
@@ -34,11 +34,11 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 2. Select **Application Integration** from the main page menu
 
-![image alt text](./media/image_iic_ai.jpeg)
+![image alt text](../media/image_iic_ai.jpeg)
 
 3. Click on **Demo** project from the list of Application Integration projects displayed.
 
-![image alt text](./media/image_iic_ai_projects.png)
+![image alt text](./media/image_iic_ai_projects_demo.png)
 
 4. Click on the **Fetch Leads** process.
 
