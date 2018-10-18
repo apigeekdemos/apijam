@@ -120,6 +120,13 @@ In this part of the lab, we will secure access to our *Orders* API, by requiring
 
 ![image alt text](./media/image_apigee_proxy_edit_verifyapikey.png)
 
+3. Once the proxy verifies the apikey, it is a best practice to remove it from the request to prevent the key to be leaked to the backend target. To do this:
+* Add an *AssignMessage* policy in the proxy *PreFlow* after the Verify API Key policy
+* Edit the policy to clean out unused elements, and use the *Remove* tag to remove the apikey from the request header
+* Save and deploy the API proxy.
+
+![image alt text](./media/image_apigee_proxy_remove_apikey.png)
+
 2. Follow the steps outline in this [Lab](https://github.com/apigeekdemos/apijam/tree/informatica/Labs/Core/Lab%204%20API%20Security%20-%20Securing%20APIs%20with%20API%20Keys) to publish an *Orders* API Product, register a developer and application, and generate an apikey for the app. You will use this key to pass in the request header to test the proxy.
 
 * When configuring the API Product select the *Orders* proxy to be included in the product:
