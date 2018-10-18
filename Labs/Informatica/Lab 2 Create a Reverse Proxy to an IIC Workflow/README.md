@@ -106,12 +106,12 @@ Header:
 *Content-Type: application/json*
 
 Payload Body:
-![image alt text](./media/image_apigee_rest_client_post_initiate_order.png)
+![image alt text](../media/image_apigee_rest_client_post_initiate_order.png)
 
 Click on *Send*.
 
 4. You should see a success response similar to this -
-![image alt text](./media/image_apigee_rest_client_post_initiate_order_response.png)
+![image alt text](../media/image_apigee_rest_client_post_initiate_order_response.png)
 
 # Summary
 
