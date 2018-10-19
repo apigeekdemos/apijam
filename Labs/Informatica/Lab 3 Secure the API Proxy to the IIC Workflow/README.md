@@ -23,6 +23,7 @@ In this lab, we will see how to secure calls to a reverse proxy, retrieve and pa
 
 # Pre-requisites
 
+* Complete the steps outlined in *Setting up your Informatica Cloud Organization*
 * Login access to the Informatica Integration Cloud - Application Integration console with Order Management workflows provisioned.
     * Please get IIC login credentials from Instructor.
 * Apigee Edge account and Organization provisioned on Apigee Cloud

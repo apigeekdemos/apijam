@@ -18,11 +18,13 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 # Pre-requisites
 
+* Complete the steps outlined in *Setting up your Informatica Cloud Organization*
 * Admin credentials to the Informatica Integration Cloud - Application Integration
     * Please get IIC login credentials from Instructor.
 * Apigee Edge account and Organization provisioned on Apigee Cloud
 * Org Admin credentials to the above Apigee Edge Organization
 * [REST Client](https://apigee-rest-client.appspot.com/) on a browser window., or Postman
+
 
 # Instructions
 
