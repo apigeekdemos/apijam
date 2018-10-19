@@ -82,6 +82,8 @@ The steps below shows how to configure your IIC Org with the configuration neede
 
 9. Edit the *Start* properties of the *Initiate Order* workflow to add your username to the *Allowed Users* field. Then, click *Save*, then *Publish* the workflow.
 
+![image alt text](./media/image_iic_ai_order_initiate_save_username.png)
+
 # Summary
 
 That completes the setup on Informatica Integration CLoud. You can now proceed with Lab 1 in this series.
