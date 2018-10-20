@@ -50,8 +50,8 @@ We will first create an encrypted KVM to store the IIC Org credentials. These cr
 4. In the popup dialog, provide a name for the Key Value Map, and check the *Encrypted* box. Click the *Add* button. Once created, the KVM should show in the list of KVMs on this page.
 
 5. Click the arrow next to the KVM to expand and add two entries to this map. The 2 entries are:
-* key: iic_username, value: _GET_FROM_INSTRUCTOR
-* key: iic_password, value: _GET_FROM_INSTRUCTOR
+* key: iic_username, value: _your_IIC_login_username
+* key: iic_password, value: _your_IIC_login_password
 
 ![image alt text](./media/image_apigee_edit_kvm.png)
 

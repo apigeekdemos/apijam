@@ -18,7 +18,6 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 # Pre-requisites
 
-* Complete the steps outlined in *Setting up your Informatica Cloud Organization*
 * Admin credentials to the Informatica Integration Cloud - Application Integration
     * Please get IIC login credentials from Instructor.
 * Apigee Edge account and Organization provisioned on Apigee Cloud
@@ -32,7 +31,7 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 **NOTE:** This workflow is pre-created in the IIC Application Integration demo environment. The process uses an SFDC account to fetch lead objects from Salesforce and returns them in JSON format. Since this workflow is already pre-configured, this step is a review to make sure it is available for execution in IIC. 
 
-1. Go to [https://dm-us.informaticacloud.com/identity-service/home](https://dm-us.informaticacloud.com/identity-service/home) and log in to the IIC UI using your IIC credentials.
+1. Go to [https://dm-us.informaticacloud.com/identity-service/home](https://dm-us.informaticacloud.com/identity-service/home) and log in to the IIC UI.
 
 2. Select **Application Integration** from the main page menu
 
