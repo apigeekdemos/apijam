@@ -25,11 +25,9 @@ In this lab, we will see how to secure calls to a reverse proxy, retrieve and pa
 
 * Complete the steps outlined in *Setting up your Informatica Cloud Organization*
 * Login access to the Informatica Integration Cloud - Application Integration console with Order Management workflows provisioned.
-    * Please get IIC login credentials from Instructor.
 * Apigee Edge account and Organization provisioned on Apigee Cloud
 * [REST Client](https://apigee-rest-client.appspot.com/) on a browser window., or Postman
-* Deployed *Orders* proxy (from Lab 2) to your own Apigee Edge Org. 
-    * For this lab, you should export the *Orders* proxy generated in Lab 2 and import into your own Org on Edge.
+* Deployed *Orders* proxy (from Lab 2) in your Apigee Edge Org.
 
 # Instructions
 
