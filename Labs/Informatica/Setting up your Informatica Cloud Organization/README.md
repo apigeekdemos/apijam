@@ -13,6 +13,17 @@ The set of steps below allows you to configure your own Informatica Cloud organi
     * Once registered, confirm your account by clicking on the link in the email you receive at the registered email address.
     * Enter password, security question, and click the *Log In* button. (*Note*: The log in button might be grayed out in the UI, but click anywhere in the box and it should get enabled)
     * Click *Continue* on the privacy dialog.
+
+* Salesforce account with credentials : username, password, security token. This is only needed for the FetchLeads IIC workflow. If you do not have a Salesforce account, you can sign up for one here: (https://developer.salesforce.com/signup?d=70130000000td6N).
+    * Click the link in the verification email to activate your account.
+    * Enter a password and security question/answer
+    * Once logged into Salesforce, click the Setup (gear icon) on the top right to install the ICRT package
+        * In a separate browser tab navigate to the url:
+        https://login.salesforce.com/packaging/installPackage.apexp?p0=04to0000000KEBS
+        * On the page, select the *Install for all Users*, check the acknowledgement, and click *Install*
+        NOTE: On oaccasion, you may see a page saying that *This app is taking a long time to install*. You should receive an email once the installation is completed.
+        * Verify the package in installed by going to *Apps > Installed Packages* in the left nav of the Salesforce UI.
+
 * Apigee Edge account and Organization provisioned on Apigee Cloud
     * You can sign up for your own free trial account here: (https://apigee.com/api-management/#/homepage)
 * Org Admin credentials to the above Apigee Edge Organization
@@ -49,14 +60,14 @@ The steps below shows how to configure your IIC Org with the configuration neede
 
 ![image alt text](./media/image_iic_ai_edit_apigee_connection.png)
 
-## Import an IIC Service Workflow
+## Import the InitiateOrder IIC Service Workflow
 
 6. In the steps below, you will import the *InitiateOrder* service workflow into your Trial IIC Org.
 
-* Go to apijam/Labs/Informatica/Resources on github.com and download the *Order Initiation .zip* file
+* Go to apijam/Labs/Informatica/Resources on github.com and download the *Order_Initiation.zip* file
 * In *Application Integration*, click on the *Explore* folder icon in the left nav
 * Click on the green *Import* button at the top right
-* In the file dialog, click *Choose File*, and select the *Order Initiation .zip* file
+* In the file dialog, click *Choose File*, and select the *Order_Initiation.zip* file
 * Click on the green Import button to start the import of this workflow alongwith all its dependencies
 
 ![image alt text](./media/image_iic_ai_import_order_initiation.png)
@@ -83,6 +94,48 @@ The steps below shows how to configure your IIC Org with the configuration neede
 9. Edit the *Start* properties of the *Initiate Order* workflow to add your username to the *Allowed Users* field. Then, click *Save*, then *Publish* the workflow.
 
 ![image alt text](./media/image_iic_ai_order_initiate_save_username.png)
+
+## Import the FetchLeads IIC Service Workflow
+
+10. We will also import the *FetchLeads* service workflow into your Trial IIC Org.
+
+* Go to apijam/Labs/Informatica/Resources on github.com and download the *Fetch_Leads.zip* file
+* In *Application Integration*, click on the *Explore* folder icon in the left nav
+* Click on the green *Import* button at the top right
+* In the file dialog, click *Choose File*, and select the *Fetch_Leads.zip* file
+* Click on the green Import button to start the import of this workflow alongwith all its dependencies
+
+![image alt text](./media/image_iic_ai_import_fetch_leads.png)
+
+ Once the Import is completed, you should see a *Demo* project created with the *FetchLeads* process and dependent objects
+
+![image alt text](./media/image_iic_ai_fetch_leads_project.png)
+
+11. Edit and Publish the *TestSFDCConnection* in the *Demo* project
+* Click on *Demo* project
+* Click on *TestSFDCConnection* folder
+* Provide your SFDC connection credentials: username, password, security token
+    * In order to get your security token, once you login to Salesforce, go to your profile icon at the top right, then click *Settings*. Under *My Personal Information* in the left nav menu, select *Reset My Security Token*.
+* Click *Save*
+* Test the connection is working properly by clicking the *Test* button. You should see a *Passed* string displayed, if the connection to Salesforce is successful.
+* Finally, *Publish* the connection
+
+![image alt text](./media/image_iic_ai_test_sfdc_connection.png)
+
+12. Publish and Test the *FetchLeads* workflow
+
+* Click on the *FetchLeads* process in the Demo project, then click the 3 dots to Publish the workflow.
+* From the same 3 dots menu, click on *Properties Detail*
+* Click on the *COPY* button to copy the service url endpoint to the FetchLeads service
+
+![image alt text](./media/image_iic_ai_fetch_leads_service_url.png)
+
+* Paste the service url into a new browser tab and hit Enter
+* You should see the output of the workflow that contains a list of Leads retrieved from Salesforce
+* This verifies that the *FetchLeads* service is properly configured and operational in IIC
+
+![image alt text](./media/image_iic_ai_fetch_leads_service_output.png)
+
 
 # Summary
 

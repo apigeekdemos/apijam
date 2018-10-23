@@ -19,8 +19,11 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 # Pre-requisites
 
 * Admin credentials to the Informatica Integration Cloud - Application Integration
-    * Please get IIC login credentials from Instructor.
-* Apigee Edge account and Organization provisioned on Apigee Cloud
+    * Please follow instructions documented in *Setting up you Informatica Cloud Organization* (../Setting up yout Informatica Cloud Organization/README.md)
+* Salesforce Developer Account with ICRT package installed. (only needed for Lab 1)
+    * See instructions in *Setting up you Informatica Cloud Organization* (../Setting up yout Informatica Cloud Organization/README.md)
+* *FetchLeads* service workflow successully published to your IIC Cloud Org
+* Apigee Edge account and Organization provisioned on Apigee Cloud with *Extensions* enabled
 * Org Admin credentials to the above Apigee Edge Organization
 * [REST Client](https://apigee-rest-client.appspot.com/) on a browser window., or Postman
 
@@ -29,7 +32,7 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 
 ## Review Informatica Integration Cloud - Application Integration - FetchLeads process workflow
 
-**NOTE:** This workflow is pre-created in the IIC Application Integration demo environment. The process uses an SFDC account to fetch lead objects from Salesforce and returns them in JSON format. Since this workflow is already pre-configured, this step is a review to make sure it is available for execution in IIC. 
+**NOTE:** This workflow is pre-created in the IIC Application Integration demo environment. The process uses a Salesforce account to fetch lead objects from Salesforce and returns them in JSON format. Since this workflow should already have been configured as part of the Setup instuctions (See Pre-requisites above, this step is a review to make sure it is available for execution in IIC. 
 
 1. Go to [https://dm-us.informaticacloud.com/identity-service/home](https://dm-us.informaticacloud.com/identity-service/home) and log in to the IIC UI.
 
@@ -63,11 +66,11 @@ Enter a name and optional description for the Extension instance. Then, click Cr
 
 ![image alt text](./media/image_apigee_extensions_iic.png)
 
-10. On the Extension detail page, click the > to configure the instance for the corresponding Apigee environment. In this lab, we will configure the leads extension instance for the *test* environment.
+10. On the Extension detail page, click the > to configure the instance for the corresponding Apigee environment. In this lab, we will configure the *leads* extension instance for the *test* environment.
 
 ![image alt text](./media/image_apigee_extensions_iic_config.png)
 
-11. Clicking the > will popup a dialog where you enter your IIC administrator username and password in JSON format. Please get these credentials from the instructor or use your own if you already have an IIC cloud account. Then, click Save.
+11. Clicking the > will popup a dialog where you enter your IIC administrator username and password in JSON format. Please use your IIC cloud account login credentials. Then, click Save.
 
 ![image alt text](./media/image_apigee_extensions_iic_config_creds.png)
 

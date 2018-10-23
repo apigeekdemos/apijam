@@ -19,8 +19,8 @@ In this lab, we will see how to create a reverse proxy, that routes inbound requ
 # Pre-requisites
 
 * Complete the steps outlined in *Setting up your Informatica Cloud Organization*
-* Login access to the Informatica Integration Cloud - Application Integration console with Order Management workflows provisioned.
-    * Please get IIC login credentials from Instructor.
+* Login access to the Informatica Integration Cloud - Application Integration console.
+* *Order Initiation* service workflow successully published to your IIC Cloud Org
 * Apigee Edge account and Organization provisioned on Apigee Cloud
 * [REST Client](https://apigee-rest-client.appspot.com/) on a browser window., or Postman
 
